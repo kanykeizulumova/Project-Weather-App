@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Weather App</title>
+    <%= htmlWebpackPlugin.tags.headTags %>
+</head>
+
+<body>
+    <header>
+        <h1>Weather App</h1>
+
+        <div id="weather-container">
+            <input type="text" id="city-input" pattern="^[A-Za-z]*$" required minlength="2"
+                title="Only Latin letters are allowed" placeholder="Enter city name">
+            <span class="error" aria-live="polite"></span>
+            <button id="get-weather">Get Weather</button>
+        </div>
+    </header>
+    <div class="weather-info">
+        <p id="city"></p>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="icon">
+            <img class="images" src="#" alt="">
+        </p>
+    </div>
+    <footer>
+        <p>© 2025 Weather App. All rights reserved.</p>
+    </footer>
+    <%= htmlWebpackPlugin.tags.bodyTags %>
+</body>
+
+</html>
